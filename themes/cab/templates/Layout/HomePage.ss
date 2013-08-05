@@ -1,41 +1,10 @@
+<div class="hero">
+        <div class="container clearfix">
 
-	
-  <div class="slider-container">
-  <div class = "sContainer">
- 
-  <div class="flexslider">
-  	 
-            <div class="hero-text">
-	            <h2 class="blocktext">Get Involved!</h2>
-	            <ul>
-	                <li><a href="manage-your-org/">Manage Your Student Org</a></li>
-	                <li><a href="services/">Our Services</a></li>
-	            </ul>
-            </div><!-- end hero-text -->
-            
-            
-      <ul class="slides">
-     
-        <% loop Slides %>
-        <li>
-        	
-          <a href="$Link" target="_blank"><img src="$ImageURL" alt="Slideshow Photo $Pos" /></a>
-          <p class="flex-caption"><a href="$Link" class="full-desc" target="_blank">$Description</a> 
-        </li>
-         
-        <% end_loop %>
-       </ul><!-- end slides -->
-       
-    </div>  <!-- end container -->
-  
-  </div><!-- end flexslider -->
-  
-  <% if HomePageHeroFeatures.limit(2) %>
-		  
+        <% if HomePageHeroFeatures.limit(2) %>
             <div class="hero-article-wrapper">
-            	 <h2 id ="cabfare">CabFare</h2>
+
                 <% loop HomePageHeroFeatures %>
-               
                 <div class="hero-article clearfix">
                     <% if $Image %>
                     	<% if $UseExternalLink %>
@@ -58,13 +27,22 @@
                     	<a href="$AssociatedPage.Link" class="hero-link">Read More</a>
                     <% end_if %>
                 </div>
-                <% end_loop %>
-                </div>
-	       <% end_if %>
-</div><!-- end slider-container -->
+              <% end_loop %>
 
 
-	
+	          </div>
+         <% end_if %>
+	        <div class="hero-text">
+                <h2 class="blocktext">The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</h2>
+                <ul>
+                    <li><a href="/vp-for-student-life/about/">Meet Tom</a></li>
+                    <li><a href="/vp-for-student-life/staff/">Staff</a></li>
+                    <li><a href="https://www.givetoiowa.org/GiveToIowa/WebObjects/GiveToIowa.woa/wa/goTo?area=studentlife">Give Now</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 	<section class="home-highlights">
         <div class="container clearfix">
 	        <% loop HomePageFeatures %>

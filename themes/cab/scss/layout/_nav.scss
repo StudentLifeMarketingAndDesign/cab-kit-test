@@ -110,16 +110,16 @@
 }
 .nav-main li {
 	@media screen and (min-width: $break-medium) {
-		//border-right: 1px solid #fff;
+		border-right: 1px solid #fff;
 		display: table-cell;
 		text-rendering: optimizelegibility;
 		&:first-child {
-			//border-left: 1px solid #fff;
+			border-left: 1px solid #fff;
 		}
 	}
 }
 .nav-main a {
-	border-bottom: 1px solid #dedede;
+	border-bottom: 1px solid #ddd;
 	display: block;
 	@include rem(14);
 	padding: .8em 0 .8em 15px;
@@ -132,7 +132,7 @@
 	}
 	@media screen and (min-width: $break-medium) {
 		border-bottom: none;
-		color: white;
+		color: #333;
 		font-family: $heading-font;
 		@include rem(17);
 		font-weight: 300;

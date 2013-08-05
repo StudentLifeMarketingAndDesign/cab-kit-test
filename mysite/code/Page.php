@@ -104,12 +104,6 @@ class Page_Controller extends ContentController {
     Requirements::block('division-bar/css/_division-bar.css');
 	}
 
-	public function Events(){
-    $events = $this->RSSDisplay(3, 'http://afterclass.uiowa.edu/events/categoriesrss/Center%20for%20Student%20Involvement%20and%20Leadership');
-    return $events;
-
-  }	
-  
 
 	/* Clear Out Empty Lines from SS Template Indents */
 	/*public function handleRequest(SS_HTTPRequest $request, DataModel $model) {

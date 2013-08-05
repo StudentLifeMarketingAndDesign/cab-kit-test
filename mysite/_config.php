@@ -26,7 +26,6 @@ FulltextSearchable::enable();
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 Director::set_environment_type("dev");
-Security::setDefaultAdmin('admin','password');
 
 // add a button to remove formatting
 HtmlEditorConfig::get('cms')->insertButtonsBefore(
@@ -60,4 +59,3 @@ GD::set_default_quality(80);
 ShortcodeParser::get()->register('blogfeed',array('Page_Controller','BlogFeedHandler'));
 ShortcodeParser::get()->register('spotlight',array('Page_Controller','StaffSpotlightHandler'));
 Object::add_extension("BlogEntry","BlogFieldExtension");
-Object::add_extension('Page_Controller', 'RssDisplayExtension');
