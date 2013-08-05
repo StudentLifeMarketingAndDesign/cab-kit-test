@@ -40,3 +40,6 @@
 [submodule "gridfield-betterbuttons"]
 	path = gridfield-betterbuttons
 	url = https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git
+[submodule "rss-display"]
+	path = rss-display
+	url = git://github.com/StudentLifeMarketingAndDesign/rss-display
