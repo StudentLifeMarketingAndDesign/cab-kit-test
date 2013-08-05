@@ -38,8 +38,18 @@
 		max-width: 70%;
 		margin-right: 300px;
 		text-align: left;
+		z-index: 99;
 	}
 }
+
+.slider-container .hero-text {
+  display: none;
+  @media screen and (min-width: $break-medium) {
+    display: block;
+  }
+}
+
+
 .blocktext {
 	margin-top: 0;
 	@include rem(24);
@@ -92,18 +102,23 @@
 	margin-bottom: 1em;
 	overflow: hidden;
 	@media screen and (min-width: $break-medium) {
-		width: 278px;
+		width: 485px;
 		margin-bottom: 0;
 		display: inline-block;
-		background: #fff;
+		//background: #fff;
 		padding: 1em;
 		text-align: left;
 		vertical-align: middle;
+		position: absolute;
+		z-index: 99;
+		right: 30px;
+		top: 325px; 
+		margin-left: 306px;
 	}
 }
 .hero-article {
 	border-top: 1px solid #ddd;
-	margin-top: 1.7em;
+	background: #fff;
 	padding-top: 1em;
 	width: 100%;
 	@media screen and (min-width: $break-small) and (max-width: $break-medium) {
@@ -176,8 +191,8 @@
 /* Home Highlights
 ========================================================================== */
 .home-highlights {
-	background: #f2f2f2;
 	padding: 5em 0;
+
 }
 .module {
 	background: #fff;
