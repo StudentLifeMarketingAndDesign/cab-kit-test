@@ -38,6 +38,7 @@
 		max-width: 70%;
 		margin-right: 300px;
 		text-align: left;
+		z-index: 99;
 	}
 }
 .blocktext {
@@ -99,6 +100,14 @@
 		padding: 1em;
 		text-align: left;
 		vertical-align: middle;
+		position: absolute;
+		z-index: 9;
+		margin-left: 610px;
+		max-height: 83%;
+		right: 1em;
+		bottom: 5em;
+		
+		
 	}
 }
 .hero-article {
@@ -173,11 +182,21 @@
 	}
 }
 
+.slider-container .hero-text {
+	display: none;
+	@media screen and (min-width: $break-medium){
+		display: block; 
+	}
+}
+
+.slider-container {
+	background: #202020;
+}
 /* Home Highlights
 ========================================================================== */
 .home-highlights {
 	background: #f2f2f2;
-	padding: 5em 0;
+	padding: 1em 0;
 }
 .module {
 	background: #fff;

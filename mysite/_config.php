@@ -26,7 +26,7 @@ FulltextSearchable::enable();
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 Director::set_environment_type("dev");
-
+Security::setDefaultAdmin('admin','password');
 // add a button to remove formatting
 HtmlEditorConfig::get('cms')->insertButtonsBefore(
     'styleselect',

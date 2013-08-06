@@ -1,48 +1,66 @@
-<div class="hero">
-        <div class="container clearfix">
 
-        <% if HomePageHeroFeatures.limit(2) %>
+<div class="slider-container">
+  <div class="container">
+  <div class="flexslider">
+            <div class="hero-text">
+	            <h2 class="blocktext">Entertainment done right.</h2>
+	            <ul>
+	                <li><a href="manage-your-org/">Next up</a></li>
+	                <li><a href="services/">Subscribe</a></li>
+	            </ul>    
+            </div><!-- end hero-text -->
+            
+      <ul class="slides">
+        <% loop Slides %>
+        <li>
+          <a href="$Link" target="_blank"><img src="$ImageURL" alt="Slideshow Photo $Pos" /></a>
+          <p class="flex-caption"><a href="$Link" class="full-desc" target="_blank">$Description</a><a class="mobile-desc">$Description.LimitCharacters(60)</a></p>
+        </li>
+        <% end_loop %>
+       </ul><!-- end slides -->
+       <% if HomePageHeroFeatures.limit(2) %>
             <div class="hero-article-wrapper">
 
                 <% loop HomePageHeroFeatures %>
                 <div class="hero-article clearfix">
                     <% if $Image %>
-                    	<% if $UseExternalLink %>
-                    		<a href="$ExternalLink" target="_blank"><img src="$Image.URL" alt=""></a>
-                    	<% else %>
-                        	<a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
+                    <% if $UseExternalLink %>
+                    <a href="$ExternalLink" target="_blank"><img src="$Image.URL" alt=""></a>
+                    <% else %>
+                        <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
                         <% end_if %>
                     <% end_if %>
                     <h3 class="hero-title">
-	                    <% if $UseExternalLink %>
-	                    	<a href="$ExternalLink" target="_blank">$Title</a>
-	                    <% else %>
-	                    	<a href="$AssociatedPage.Link">$Title</a>
-	                    <% end_if %>
+                   <% if $UseExternalLink %>
+                   	<a href="$ExternalLink" target="_blank">$Title</a>
+                   <% else %>
+                   	<a href="$AssociatedPage.Link">$Title</a>
+                   <% end_if %>
                     </h3>
-                    <div class="hero-content">$Content</div>
+                <div class="hero-content">$Content</div>
                     <% if $UseExternalLink %>
-                    	<a href="$ExternalLink" target="_blank" class="hero-link">Read More</a>
+                    <a href="$ExternalLink" target="_blank" class="hero-link">Read More</a>
                     <% else %>
-                    	<a href="$AssociatedPage.Link" class="hero-link">Read More</a>
+                    <a href="$AssociatedPage.Link" class="hero-link">Read More</a>
                     <% end_if %>
                 </div>
               <% end_loop %>
 
 
-	          </div>
-         <% end_if %>
-	        <div class="hero-text">
-                <h2 class="blocktext">The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</h2>
-                <ul>
-                    <li><a href="/vp-for-student-life/about/">Meet Tom</a></li>
-                    <li><a href="/vp-for-student-life/staff/">Staff</a></li>
-                    <li><a href="https://www.givetoiowa.org/GiveToIowa/WebObjects/GiveToIowa.woa/wa/goTo?area=studentlife">Give Now</a></li>
-                </ul>
-            </div>
         </div>
+         <% end_if %>
+        </div>
+  </div><!-- end container -->
+  
 
-    </div>
+        
+  
+  </div><!-- end flexslider -->
+</div><!-- end slider-container -->
+
+
+
+
 	<section class="home-highlights">
         <div class="container clearfix">
 	        <% loop HomePageFeatures %>
@@ -64,5 +82,6 @@
 	         <% end_loop %>
          </div><!-- end .container -->
     </section>
+    
 
-    <%-- <% include TopicsAndNews %> --%>
+    <% include TopicsAndNews %> 
