@@ -7,58 +7,61 @@
                 <% loop HomePageHeroFeatures %>
                 <div class="hero-article clearfix">
                     <% if $Image %>
-                    <% if $UseExternalLink %>
-                    <a href="$ExternalLink" target="_blank"><img src="$Image.URL" alt=""></a>
-                    <% else %>
-                        <a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
+                    	<% if $UseExternalLink %>
+                    		<a href="$ExternalLink" target="_blank"><img src="$Image.URL" alt=""></a>
+                    	<% else %>
+                        	<a href="$AssociatedPage.Link"><img src="$Image.URL" alt=""></a>
                         <% end_if %>
                     <% end_if %>
                     <h3 class="hero-title">
-                   <% if $UseExternalLink %>
-                   	<a href="$ExternalLink" target="_blank">$Title</a>
-                   <% else %>
-                   	<a href="$AssociatedPage.Link">$Title</a>
-                   <% end_if %>
+	                    <% if $UseExternalLink %>
+	                    	<a href="$ExternalLink" target="_blank">$Title</a>
+	                    <% else %>
+	                    	<a href="$AssociatedPage.Link">$Title</a>
+	                    <% end_if %>
                     </h3>
                     <div class="hero-content">$Content</div>
-	                    <% if $UseExternalLink %>
-	                    <a href="$ExternalLink" target="_blank" class="hero-link">Read More</a>
-	                    <% else %>
-	                    <a href="$AssociatedPage.Link" class="hero-link">Read More</a>
-	                    <% end_if %>
-                    </div>
+                    <% if $UseExternalLink %>
+                    	<a href="$ExternalLink" target="_blank" class="hero-link">Read More</a>
+                    <% else %>
+                    	<a href="$AssociatedPage.Link" class="hero-link">Read More</a>
+                    <% end_if %>
+                </div>
               <% end_loop %>
-              </div>
-        <% end_if %>
-        <div class="hero-text">
+
+
+	          </div>
+         <% end_if %>
+	        <div class="hero-text">
                 <h2 class="blocktext">The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</h2>
                 <ul>
                     <li><a href="/vp-for-student-life/about/">Meet Tom</a></li>
                     <li><a href="/vp-for-student-life/staff/">Staff</a></li>
                     <li><a href="https://www.givetoiowa.org/GiveToIowa/WebObjects/GiveToIowa.woa/wa/goTo?area=studentlife">Give Now</a></li>
                 </ul>
+            </div>
         </div>
+
     </div>
-</div>
-<section class="home-highlights">
+	<section class="home-highlights">
         <div class="container clearfix">
-       <% loop HomePageFeatures %>
-           <div class="module">
-               <div class="media">
-               <% if $YouTubeEmbed %>
-               	$YouTubeEmbed
-               <% else %>
-                   <a href="$AssociatedPage.Link">
-                       <img src="$Image.CroppedImage(350,197).URL" alt="$Title">
-                   </a>
-               <% end_if %>
-               </div>
-               <div class="inner">
-                   <h3><a href="$AssociatedPage.Link">$Title</a></h3>
-                   	$Content
-               </div>
-           </div>
-        <% end_loop %>
+	        <% loop HomePageFeatures %>
+	            <div class="module">
+	                <div class="media">
+	                <% if $YouTubeEmbed %>
+	                	$YouTubeEmbed
+	                <% else %>
+	                    <a href="$AssociatedPage.Link">
+	                        <img src="$Image.CroppedImage(350,197).URL" alt="$Title">
+	                    </a>
+	                <% end_if %>
+	                </div>
+	                <div class="inner">
+	                    <h3><a href="$AssociatedPage.Link">$Title</a></h3>
+	                    	$Content
+	                </div>
+	            </div>
+	         <% end_loop %>
          </div><!-- end .container -->
     </section>
 
