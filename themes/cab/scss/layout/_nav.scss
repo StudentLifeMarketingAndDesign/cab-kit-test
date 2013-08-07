@@ -110,12 +110,9 @@
 }
 .nav-main li {
 	@media screen and (min-width: $break-medium) {
-		border-right: 1px solid #fff;
+
 		display: table-cell;
 		text-rendering: optimizelegibility;
-		&:first-child {
-			border-left: 1px solid #fff;
-		}
 	}
 }
 .nav-main a {
@@ -132,7 +129,7 @@
 	}
 	@media screen and (min-width: $break-medium) {
 		border-bottom: none;
-		color: #333;
+		color: #fff;
 		font-family: $heading-font;
 		@include rem(17);
 		font-weight: 300;

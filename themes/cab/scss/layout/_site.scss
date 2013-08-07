@@ -4,7 +4,8 @@ html {
 	font-size: $base-font-size;
 }
 body {
-	background: #fff;
+	background: #fff url(../images/filmbackground.jpg) repeat-y left top;
+	background-size: 100%;
 	color: #444;
 	font-family: $body-font;
 	font-size: $base-font-size;
@@ -36,7 +37,7 @@ body {
 }
 .main-bg {
 	@media screen and (min-width: $break-medium) {
-		background: #000 url(../images/-image.jpg) no-repeat center top;
+		background: rgba(255,255,255,0.5) url(../images/-image.jpg) no-repeat center top;
 		border-bottom: 5px solid $yellow;
 		height: 665px;
 		position: absolute;
@@ -55,7 +56,7 @@ body {
 	}
 }
 .content-wrapper.staff {
-	background-color: #fff;
+	//background-color: #fff;
 }
 .main-content, .sec-content {
 	@media screen and (min-width: $break-medium) {
@@ -114,11 +115,11 @@ body {
 /* Header
 ========================================================================== */
 .header {
-	background: #fff url(../images/nav_yellow.gif) repeat-x left bottom;
+	background: rgba(255,255,255,0) url(../images/nav_yellow.gif) repeat-x left bottom;
 	position: relative;
 }
 .logo {
-	color: #222;
+	color: #fff;
 	display: block;
 	font-family: "proxima-nova-condensed",sans-serif;
 	@include rem(29);

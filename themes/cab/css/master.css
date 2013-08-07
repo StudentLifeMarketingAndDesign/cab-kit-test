@@ -2440,18 +2440,17 @@ table tbody + tbody {
 
 /* line 192, ../scss/layout/_home.scss */
 .slider-container {
-  background: #202020;
+  background: rgba(32, 32, 32, 0.71);
 }
 
 /* Home Highlights
 ========================================================================== */
 /* line 197, ../scss/layout/_home.scss */
 .home-highlights {
-  background: #f2f2f2;
   padding: 1em 0;
 }
 
-/* line 201, ../scss/layout/_home.scss */
+/* line 200, ../scss/layout/_home.scss */
 .module {
   background: #fff;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
@@ -2463,7 +2462,7 @@ table tbody + tbody {
   min-height: 305px;
 }
 @media screen and (min-width: 480px) {
-  /* line 201, ../scss/layout/_home.scss */
+  /* line 200, ../scss/layout/_home.scss */
   .module {
     float: left;
     margin-left: 2.7624309392265194%;
@@ -2474,7 +2473,7 @@ table tbody + tbody {
     -moz-transition: all .2s ease-out;
     transition: all .2s ease-out;
   }
-  /* line 219, ../scss/layout/_home.scss */
+  /* line 218, ../scss/layout/_home.scss */
   .module:hover {
     margin-top: -3px;
     -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
@@ -2484,27 +2483,27 @@ table tbody + tbody {
   }
 }
 
-/* line 228, ../scss/layout/_home.scss */
+/* line 227, ../scss/layout/_home.scss */
 .lt-ie9 .module:hover {
   margin-top: 0;
 }
 
-/* line 231, ../scss/layout/_home.scss */
+/* line 230, ../scss/layout/_home.scss */
 .module:first-child {
   margin-left: 0;
 }
 
-/* line 234, ../scss/layout/_home.scss */
+/* line 233, ../scss/layout/_home.scss */
 .module .media {
   border-bottom: 4px solid #ffce39;
 }
 
-/* line 237, ../scss/layout/_home.scss */
+/* line 236, ../scss/layout/_home.scss */
 .module .media img, .module .media object, .module .media embed {
   width: 100%;
 }
 
-/* line 240, ../scss/layout/_home.scss */
+/* line 239, ../scss/layout/_home.scss */
 .module .inner {
   font-size: 14px;
   font-size: 0.93333rem;
@@ -2512,15 +2511,37 @@ table tbody + tbody {
   padding: 1em;
 }
 
-/* line 245, ../scss/layout/_home.scss */
+/* line 244, ../scss/layout/_home.scss */
 .module h3 {
   font-size: 20px;
   margin: .3em 0 .5em;
   text-transform: uppercase;
 }
-/* line 249, ../scss/layout/_home.scss */
+/* line 248, ../scss/layout/_home.scss */
 .module h3 a {
   color: #333;
+}
+
+/* line 253, ../scss/layout/_home.scss */
+img#redlight {
+  float: right;
+  margin: 0;
+}
+
+/* line 258, ../scss/layout/_home.scss */
+#involve h5 {
+  font-family: 'Arimo',arial, serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  float: left;
+  width: 300px;
+  color: #fefefe;
+}
+
+/* line 267, ../scss/layout/_home.scss */
+#involve {
+  color: #fefefe;
 }
 
 /* Navigation
@@ -2674,17 +2695,12 @@ table tbody + tbody {
 @media screen and (min-width: 768px) {
   /* line 111, ../scss/layout/_nav.scss */
   .nav-main li {
-    border-right: 1px solid #fff;
     display: table-cell;
     text-rendering: optimizelegibility;
   }
-  /* line 116, ../scss/layout/_nav.scss */
-  .nav-main li:first-child {
-    border-left: 1px solid #fff;
-  }
 }
 
-/* line 121, ../scss/layout/_nav.scss */
+/* line 118, ../scss/layout/_nav.scss */
 .nav-main a {
   border-bottom: 1px solid #ddd;
   display: block;
@@ -2697,17 +2713,17 @@ table tbody + tbody {
   transition: font-size .3s linear;
 }
 @media screen and (max-width: 767px) {
-  /* line 121, ../scss/layout/_nav.scss */
+  /* line 118, ../scss/layout/_nav.scss */
   .nav-main a {
     text-align: left;
     /* for internet explorer */
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 121, ../scss/layout/_nav.scss */
+  /* line 118, ../scss/layout/_nav.scss */
   .nav-main a {
     border-bottom: none;
-    color: #333;
+    color: #fff;
     font-family: "proxima-nova-condensed", sans-serif;
     font-size: 17px;
     font-size: 1.13333rem;
@@ -2720,7 +2736,7 @@ table tbody + tbody {
   }
 }
 @media screen and (min-width: 980px) {
-  /* line 121, ../scss/layout/_nav.scss */
+  /* line 118, ../scss/layout/_nav.scss */
   .nav-main a {
     font-size: 20px;
     font-size: 1.33333rem;
@@ -2728,29 +2744,29 @@ table tbody + tbody {
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 121, ../scss/layout/_nav.scss */
+  /* line 118, ../scss/layout/_nav.scss */
   .nav-main a {
     padding: .25em 2em .55em;
   }
 }
 
-/* line 153, ../scss/layout/_nav.scss */
+/* line 150, ../scss/layout/_nav.scss */
 .nav-main li:last-child a {
   border-bottom: none;
 }
 
 /* Hover State */
-/* line 157, ../scss/layout/_nav.scss */
+/* line 154, ../scss/layout/_nav.scss */
 .nav-main a:hover, .nav-main a:focus {
   background: #eee;
 }
 @media screen and (min-width: 768px) {
-  /* line 157, ../scss/layout/_nav.scss */
+  /* line 154, ../scss/layout/_nav.scss */
   .nav-main a:hover, .nav-main a:focus {
     background: url(../images/nav_hover.gif) repeat-x left bottom;
     text-decoration: none;
   }
-  /* line 162, ../scss/layout/_nav.scss */
+  /* line 159, ../scss/layout/_nav.scss */
   .nav-main a:hover:after, .nav-main a:focus:after {
     content: '';
     border-style: solid;
@@ -2769,11 +2785,11 @@ table tbody + tbody {
 
 /* Active State */
 @media screen and (min-width: 768px) {
-  /* line 181, ../scss/layout/_nav.scss */
+  /* line 178, ../scss/layout/_nav.scss */
   .nav-main .active a {
     background: url(../images/nav_hover.gif) repeat-x left bottom;
   }
-  /* line 184, ../scss/layout/_nav.scss */
+  /* line 181, ../scss/layout/_nav.scss */
   .nav-main .active a:after {
     content: '';
     border-style: solid;
@@ -2792,56 +2808,56 @@ table tbody + tbody {
 
 /* Secondary Navigation
 ========================================================================== */
-/* line 203, ../scss/layout/_nav.scss */
+/* line 200, ../scss/layout/_nav.scss */
 .section-title, #blog-sidebar h3 {
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  /* line 203, ../scss/layout/_nav.scss */
+  /* line 200, ../scss/layout/_nav.scss */
   .section-title, #blog-sidebar h3 {
     margin: 1.25em 0 1.20em 15px;
     font-size: 30px;
   }
 }
-/* line 209, ../scss/layout/_nav.scss */
+/* line 206, ../scss/layout/_nav.scss */
 .section-title a, #blog-sidebar h3 a {
   color: #333;
 }
 
-/* line 211, ../scss/layout/_nav.scss */
+/* line 208, ../scss/layout/_nav.scss */
 .sec-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 217, ../scss/layout/_nav.scss */
+/* line 214, ../scss/layout/_nav.scss */
 .sec-nav a {
   border-bottom: 1px solid #ddd;
   color: #333;
   display: block;
   padding: 10px 0 10px 5px;
 }
-/* line 222, ../scss/layout/_nav.scss */
+/* line 219, ../scss/layout/_nav.scss */
 .sec-nav a:hover {
   background-color: #000;
   color: #fff;
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  /* line 217, ../scss/layout/_nav.scss */
+  /* line 214, ../scss/layout/_nav.scss */
   .sec-nav a {
     padding-left: 15px;
   }
 }
 
-/* line 231, ../scss/layout/_nav.scss */
+/* line 228, ../scss/layout/_nav.scss */
 .first-level {
   border-top: 1px solid #ddd;
   margin-bottom: 1em;
 }
 
-/* line 235, ../scss/layout/_nav.scss */
+/* line 232, ../scss/layout/_nav.scss */
 .second-level, .third-level {
   background: #f2f2f2;
   background: rgba(0, 0, 0, 0.05);
@@ -2849,26 +2865,26 @@ table tbody + tbody {
   font-size: 0.93333rem;
 }
 
-/* line 240, ../scss/layout/_nav.scss */
+/* line 237, ../scss/layout/_nav.scss */
 .second-level a {
   padding-left: 30px;
 }
 
-/* line 244, ../scss/layout/_nav.scss */
+/* line 241, ../scss/layout/_nav.scss */
 .third-level a {
   font-size: 13px;
   font-size: 0.86667rem;
   padding-left: 50px;
 }
 
-/* line 248, ../scss/layout/_nav.scss */
+/* line 245, ../scss/layout/_nav.scss */
 .sec-nav .active > a {
   background: #000;
   color: #fff;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  /* line 253, ../scss/layout/_nav.scss */
+  /* line 250, ../scss/layout/_nav.scss */
   .sec-nav .active > a:before {
     content: '';
     width: 0px;
@@ -2885,7 +2901,7 @@ table tbody + tbody {
 
 /* TAG-based Navigation
 ========================================================================== */
-/* line 270, ../scss/layout/_nav.scss */
+/* line 267, ../scss/layout/_nav.scss */
 .sec-nav .tag-nav, .tag-nav {
   border-top: none;
   list-style: none;
@@ -2893,13 +2909,13 @@ table tbody + tbody {
   padding: 0 0 0 15px;
 }
 
-/* line 276, ../scss/layout/_nav.scss */
+/* line 273, ../scss/layout/_nav.scss */
 .tag-nav li {
   display: inline-block;
   margin: 0 0 10px;
 }
 
-/* line 280, ../scss/layout/_nav.scss */
+/* line 277, ../scss/layout/_nav.scss */
 .tag-nav li a {
   background: #ffce39;
   border: none;
@@ -2913,7 +2929,7 @@ table tbody + tbody {
   border-radius: 5px;
 }
 
-/* line 292, ../scss/layout/_nav.scss */
+/* line 289, ../scss/layout/_nav.scss */
 .tag-nav .count {
   font-size: 13px;
   font-size: 0.86667rem;
@@ -3044,7 +3060,8 @@ html {
 
 /* line 6, ../scss/layout/_site.scss */
 body {
-  background: #fff;
+  background: white url(../images/filmbackground.jpg) repeat-y left top;
+  background-size: 100%;
   color: #444;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -3055,19 +3072,19 @@ body {
 
 /* Division Bar
 ========================================================================== */
-/* line 18, ../scss/layout/_site.scss */
+/* line 19, ../scss/layout/_site.scss */
 .division-topbar .wrapper {
   max-width: 1140px;
 }
 
-/* line 21, ../scss/layout/_site.scss */
+/* line 22, ../scss/layout/_site.scss */
 .division-topbar .uiowa {
   width: 177px;
 }
 
 /* Layout
 ========================================================================== */
-/* line 28, ../scss/layout/_site.scss */
+/* line 29, ../scss/layout/_site.scss */
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -3075,16 +3092,16 @@ body {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  /* line 28, ../scss/layout/_site.scss */
+  /* line 29, ../scss/layout/_site.scss */
   .container {
     padding: 0 2em;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 37, ../scss/layout/_site.scss */
+  /* line 38, ../scss/layout/_site.scss */
   .main-bg {
-    background: black url(../images/-image.jpg) no-repeat center top;
+    background: rgba(255, 255, 255, 0.5) url(../images/-image.jpg) no-repeat center top;
     border-bottom: 5px solid #ffce39;
     height: 665px;
     position: absolute;
@@ -3092,43 +3109,38 @@ body {
   }
 }
 
-/* line 46, ../scss/layout/_site.scss */
+/* line 47, ../scss/layout/_site.scss */
 .content-wrapper {
   background: #fff;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 46, ../scss/layout/_site.scss */
+  /* line 47, ../scss/layout/_site.scss */
   .content-wrapper {
     background: #fafafa;
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 46, ../scss/layout/_site.scss */
+  /* line 47, ../scss/layout/_site.scss */
   .content-wrapper {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 57, ../scss/layout/_site.scss */
-.content-wrapper.staff {
-  background-color: #fff;
-}
-
 @media screen and (min-width: 768px) {
-  /* line 60, ../scss/layout/_site.scss */
+  /* line 61, ../scss/layout/_site.scss */
   .main-content, .sec-content {
     float: left;
   }
 }
 
-/* line 65, ../scss/layout/_site.scss */
+/* line 66, ../scss/layout/_site.scss */
 .main-content {
   padding: 0 1em;
 }
 @media screen and (min-width: 768px) {
-  /* line 65, ../scss/layout/_site.scss */
+  /* line 66, ../scss/layout/_site.scss */
   .main-content {
     background: #fff;
     border-right: 1px solid #ddd;
@@ -3140,17 +3152,17 @@ body {
   }
 }
 
-/* line 77, ../scss/layout/_site.scss */
+/* line 78, ../scss/layout/_site.scss */
 .news .main-content {
   margin-top: 0;
 }
 
-/* line 80, ../scss/layout/_site.scss */
+/* line 81, ../scss/layout/_site.scss */
 .sec-content {
   padding: 0 1em;
 }
 @media screen and (min-width: 768px) {
-  /* line 80, ../scss/layout/_site.scss */
+  /* line 81, ../scss/layout/_site.scss */
   .sec-content {
     background: #fafafa;
     border-left: 1px solid #ddd;
@@ -3161,7 +3173,7 @@ body {
   }
 }
 
-/* line 92, ../scss/layout/_site.scss */
+/* line 93, ../scss/layout/_site.scss */
 .topics {
   xbackground: #fafafa;
   border-top: 1px solid #ddd;
@@ -3169,7 +3181,7 @@ body {
   position: relative;
 }
 
-/* line 99, ../scss/layout/_site.scss */
+/* line 100, ../scss/layout/_site.scss */
 .topics-news {
   background-color: #39393a;
   -moz-box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
@@ -3177,28 +3189,28 @@ body {
   box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
 }
 @media screen and (min-width: 768px) {
-  /* line 99, ../scss/layout/_site.scss */
+  /* line 100, ../scss/layout/_site.scss */
   .topics-news {
     min-height: 500px;
     /*border-top: 3px solid $gray; */
   }
 }
-/* line 108, ../scss/layout/_site.scss */
+/* line 109, ../scss/layout/_site.scss */
 .topics-news h1, .topics-news h2, .topics-news h3, .topics-news h4 {
   color: white;
 }
 
 /* Header
 ========================================================================== */
-/* line 116, ../scss/layout/_site.scss */
+/* line 117, ../scss/layout/_site.scss */
 .header {
-  background: white url(../images/nav_yellow.gif) repeat-x left bottom;
+  background: rgba(255, 255, 255, 0) url(../images/nav_yellow.gif) repeat-x left bottom;
   position: relative;
 }
 
-/* line 120, ../scss/layout/_site.scss */
+/* line 121, ../scss/layout/_site.scss */
 .logo {
-  color: #222;
+  color: #fff;
   display: block;
   font-family: "proxima-nova-condensed",sans-serif;
   font-size: 29px;
@@ -3212,19 +3224,19 @@ body {
   text-transform: uppercase;
   text-rendering: optimizelegibility;
 }
-/* line 133, ../scss/layout/_site.scss */
+/* line 134, ../scss/layout/_site.scss */
 .logo:hover {
   text-decoration: none;
 }
 @media screen and (min-width: 480px) {
-  /* line 120, ../scss/layout/_site.scss */
+  /* line 121, ../scss/layout/_site.scss */
   .logo {
     font-size: 41px;
     font-size: 2.73333rem;
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 120, ../scss/layout/_site.scss */
+  /* line 121, ../scss/layout/_site.scss */
   .logo {
     font-size: 46px;
     font-size: 3.06667rem;
@@ -3233,7 +3245,7 @@ body {
 }
 
 @media screen and (min-width: 630px) {
-  /* line 144, ../scss/layout/_site.scss */
+  /* line 145, ../scss/layout/_site.scss */
   .rwd-break {
     display: none;
   }
@@ -3241,7 +3253,7 @@ body {
 
 /* Breadcrumbs
 ========================================================================== */
-/* line 153, ../scss/layout/_site.scss */
+/* line 154, ../scss/layout/_site.scss */
 .breadcrumbs {
   list-style: none;
   font-size: 12px;
@@ -3251,26 +3263,26 @@ body {
   xborder-bottom: 1px solid #ddd;
 }
 
-/* line 160, ../scss/layout/_site.scss */
+/* line 161, ../scss/layout/_site.scss */
 .breadcrumbs li {
   display: inline;
 }
 
-/* line 161, ../scss/layout/_site.scss */
+/* line 162, ../scss/layout/_site.scss */
 .breadcrumbs li:after {
   content: "\25B8";
   display: inline-block;
   padding: 0 6px 0 10px;
 }
 
-/* line 162, ../scss/layout/_site.scss */
+/* line 163, ../scss/layout/_site.scss */
 .breadcrumbs li:last-child:after {
   content: "";
 }
 
 /* Modules
 ========================================================================== */
-/* line 167, ../scss/layout/_site.scss */
+/* line 168, ../scss/layout/_site.scss */
 .mod {
   font-size: 14px;
   font-size: 0.93333rem;
@@ -3278,12 +3290,12 @@ body {
   position: relative;
 }
 
-/* line 172, ../scss/layout/_site.scss */
+/* line 173, ../scss/layout/_site.scss */
 .mod li {
   margin-bottom: 1em;
 }
 
-/* line 175, ../scss/layout/_site.scss */
+/* line 176, ../scss/layout/_site.scss */
 .mod h3 {
   font-size: 21px;
   font-size: 1.4rem;
@@ -3292,43 +3304,43 @@ body {
   text-transform: uppercase;
 }
 
-/* line 181, ../scss/layout/_site.scss */
+/* line 182, ../scss/layout/_site.scss */
 .mod-news small {
   display: block;
 }
 
-/* line 184, ../scss/layout/_site.scss */
+/* line 185, ../scss/layout/_site.scss */
 .mod a {
   color: #fff4d2;
 }
 
-/* line 188, ../scss/layout/_site.scss */
+/* line 189, ../scss/layout/_site.scss */
 aside .mod {
   margin-bottom: 1em;
 }
 @media screen and (min-width: 768px) {
-  /* line 188, ../scss/layout/_site.scss */
+  /* line 189, ../scss/layout/_site.scss */
   aside .mod {
     padding: 15px 0 0 22px;
   }
 }
-/* line 193, ../scss/layout/_site.scss */
+/* line 194, ../scss/layout/_site.scss */
 aside .mod a {
   color: #0088cc;
 }
 
 /* Photo + Faces Module */
-/* line 199, ../scss/layout/_site.scss */
+/* line 200, ../scss/layout/_site.scss */
 .mod.photo {
   padding-top: 22px;
 }
 
-/* line 202, ../scss/layout/_site.scss */
+/* line 203, ../scss/layout/_site.scss */
 .mod.photo div {
   position: relative;
 }
 
-/* line 205, ../scss/layout/_site.scss */
+/* line 206, ../scss/layout/_site.scss */
 .mod.photo h3, .faces h3 {
   background: #333;
   background: rgba(0, 0, 0, 0.8);
@@ -3345,12 +3357,12 @@ aside .mod a {
 }
 
 /* Faces Module Addendum */
-/* line 221, ../scss/layout/_site.scss */
+/* line 222, ../scss/layout/_site.scss */
 .faces h3 {
   bottom: 15%;
 }
 
-/* line 226, ../scss/layout/_site.scss */
+/* line 227, ../scss/layout/_site.scss */
 .mod h2 {
   font-size: 2em;
   border-bottom: 3px solid #ffce39;
@@ -3358,26 +3370,26 @@ aside .mod a {
   padding-bottom: 5px;
 }
 @media screen and (min-width: 768px) {
-  /* line 226, ../scss/layout/_site.scss */
+  /* line 227, ../scss/layout/_site.scss */
   .mod h2 {
     font-size: 3.2em;
     line-height: 27px;
   }
 }
 
-/* line 241, ../scss/layout/_site.scss */
+/* line 242, ../scss/layout/_site.scss */
 .mod {
   line-height: 1.4;
   color: white;
 }
 
-/* line 246, ../scss/layout/_site.scss */
+/* line 247, ../scss/layout/_site.scss */
 .mod-events h3 {
   font-size: 2em;
 }
 
 /* Justify Grid */
-/* line 250, ../scss/layout/_site.scss */
+/* line 251, ../scss/layout/_site.scss */
 .grid-justify {
   xfont-size: 0.1px;
   list-style: none;
@@ -3385,25 +3397,25 @@ aside .mod a {
   padding: 0;
   text-align: justify;
 }
-/* line 256, ../scss/layout/_site.scss */
+/* line 257, ../scss/layout/_site.scss */
 .grid-justify:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
-/* line 261, ../scss/layout/_site.scss */
+/* line 262, ../scss/layout/_site.scss */
 .grid-justify .filler {
   height: 0;
   margin: 0;
 }
 
-/* line 266, ../scss/layout/_site.scss */
+/* line 267, ../scss/layout/_site.scss */
 .grid-justify li {
   text-align: left;
   vertical-align: top;
 }
 @media screen and (min-width: 480px) {
-  /* line 266, ../scss/layout/_site.scss */
+  /* line 267, ../scss/layout/_site.scss */
   .grid-justify li {
     display: inline-block;
     width: 48%;
@@ -3412,12 +3424,12 @@ aside .mod a {
 
 /* Staff Page
 ========================================================================== */
-/* line 277, ../scss/layout/_site.scss */
+/* line 278, ../scss/layout/_site.scss */
 .staff-title {
   clear: both;
 }
 
-/* line 280, ../scss/layout/_site.scss */
+/* line 281, ../scss/layout/_site.scss */
 .staff-list {
   font-size: 0.1px;
   list-style: none;
@@ -3426,7 +3438,7 @@ aside .mod a {
   text-align: justify;
 }
 
-/* line 287, ../scss/layout/_site.scss */
+/* line 288, ../scss/layout/_site.scss */
 .staff-list:after {
   /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
   content: '';
@@ -3434,7 +3446,7 @@ aside .mod a {
   width: 100%;
 }
 
-/* line 292, ../scss/layout/_site.scss */
+/* line 293, ../scss/layout/_site.scss */
 .staff-list li {
   font-size: 15px;
   font-size: 1rem;
@@ -3443,38 +3455,38 @@ aside .mod a {
   text-align: left;
 }
 @media screen and (min-width: 480px) {
-  /* line 292, ../scss/layout/_site.scss */
+  /* line 293, ../scss/layout/_site.scss */
   .staff-list li {
     display: inline-block;
     width: 48%;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 292, ../scss/layout/_site.scss */
+  /* line 293, ../scss/layout/_site.scss */
   .staff-list li {
     width: 23%;
   }
 }
 
-/* line 305, ../scss/layout/_site.scss */
+/* line 306, ../scss/layout/_site.scss */
 .staff-list .filler {
   height: 0;
   margin: 0;
 }
 
-/* line 309, ../scss/layout/_site.scss */
+/* line 310, ../scss/layout/_site.scss */
 .staff-img {
   width: 100%;
 }
 
-/* line 312, ../scss/layout/_site.scss */
+/* line 313, ../scss/layout/_site.scss */
 .staff-link {
   display: block;
   margin-bottom: .5em;
   position: relative;
 }
 
-/* line 317, ../scss/layout/_site.scss */
+/* line 318, ../scss/layout/_site.scss */
 .staff-link:before {
   content: '';
   position: absolute;
@@ -3486,29 +3498,29 @@ aside .mod a {
   transition: all .2s ease-in-out;
 }
 
-/* line 327, ../scss/layout/_site.scss */
+/* line 328, ../scss/layout/_site.scss */
 .staff-link:hover:before {
   border: 4px solid #ffce39;
 }
 
-/* line 330, ../scss/layout/_site.scss */
+/* line 331, ../scss/layout/_site.scss */
 .staff-name {
   margin: 0;
 }
 
-/* line 331, ../scss/layout/_site.scss */
+/* line 332, ../scss/layout/_site.scss */
 .staff-position {
   display: block;
 }
 
-/* line 334, ../scss/layout/_site.scss */
+/* line 335, ../scss/layout/_site.scss */
 .staff-name {
   margin: 0;
 }
 
 /* Blog
 ========================================================================== */
-/* line 341, ../scss/layout/_site.scss */
+/* line 342, ../scss/layout/_site.scss */
 .tags {
   border-bottom: 1px solid #ddd;
   margin-top: -10px;
@@ -3516,98 +3528,98 @@ aside .mod a {
   margin-bottom: 1.5em;
 }
 
-/* line 347, ../scss/layout/_site.scss */
+/* line 348, ../scss/layout/_site.scss */
 .post-link {
   margin: 1.5em 0;
 }
 
 /* Pagination */
-/* line 352, ../scss/layout/_site.scss */
+/* line 353, ../scss/layout/_site.scss */
 .pagination {
   margin: 1em 0;
   text-align: center;
 }
-/* line 355, ../scss/layout/_site.scss */
+/* line 356, ../scss/layout/_site.scss */
 .pagination ul {
   display: inline-block;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 360, ../scss/layout/_site.scss */
+/* line 361, ../scss/layout/_site.scss */
 .pagination ul li {
   display: inline;
 }
 
-/* line 365, ../scss/layout/_site.scss */
+/* line 366, ../scss/layout/_site.scss */
 .pagination a {
   color: #666;
   padding: 4px 12px;
 }
-/* line 368, ../scss/layout/_site.scss */
+/* line 369, ../scss/layout/_site.scss */
 .pagination a:hover {
   background: #eee;
 }
 
-/* line 372, ../scss/layout/_site.scss */
+/* line 373, ../scss/layout/_site.scss */
 .pagination .active a {
   background: #000;
   color: #fff;
 }
 
-/* line 376, ../scss/layout/_site.scss */
+/* line 377, ../scss/layout/_site.scss */
 .pagination .disabled a:hover {
   background: #fff;
 }
 
 /* Sidebar Blog Feeds */
-/* line 380, ../scss/layout/_site.scss */
+/* line 381, ../scss/layout/_site.scss */
 .feed-nav {
   margin: 0;
 }
 
-/* line 384, ../scss/layout/_site.scss */
+/* line 385, ../scss/layout/_site.scss */
 .feed-nav li {
   list-style-type: none;
   border-bottom: 1px solid #ddd;
   padding: 0.5em;
   margin: 0;
 }
-/* line 390, ../scss/layout/_site.scss */
+/* line 391, ../scss/layout/_site.scss */
 .feed-nav li:hover {
   background: #efefef;
 }
 
-/* line 395, ../scss/layout/_site.scss */
+/* line 396, ../scss/layout/_site.scss */
 .feed-nav .read-more {
   display: block;
   float: right;
   margin-top: 1em;
 }
 
-/* line 401, ../scss/layout/_site.scss */
+/* line 402, ../scss/layout/_site.scss */
 .feed-nav .posted-on {
   font-size: 0.8em;
 }
 
-/* line 405, ../scss/layout/_site.scss */
+/* line 406, ../scss/layout/_site.scss */
 .feed-nav a:hover {
   text-decoration: none;
 }
 
-/* line 409, ../scss/layout/_site.scss */
+/* line 410, ../scss/layout/_site.scss */
 .feed-nav a .posted-on {
   color: black;
 }
 
-/* line 414, ../scss/layout/_site.scss */
+/* line 415, ../scss/layout/_site.scss */
 .feed-nav .read-more:after {
   clear: both;
 }
 
 /* Img
 ========================================================================== */
-/* line 420, ../scss/layout/_site.scss */
+/* line 421, ../scss/layout/_site.scss */
 .img-container {
   background-color: #000;
   background-position: center top;
@@ -3618,7 +3630,7 @@ aside .mod a {
   xpadding-top: 25%;
 }
 @media screen and (min-width: 768px) {
-  /* line 420, ../scss/layout/_site.scss */
+  /* line 421, ../scss/layout/_site.scss */
   .img-container {
     height: 400px;
     padding-top: 0;
@@ -3626,12 +3638,12 @@ aside .mod a {
   }
 }
 
-/* line 436, ../scss/layout/_site.scss */
+/* line 437, ../scss/layout/_site.scss */
 .img-fifty {
   visibility: hidden;
 }
 @media screen and (min-width: 768px) {
-  /* line 436, ../scss/layout/_site.scss */
+  /* line 437, ../scss/layout/_site.scss */
   .img-fifty {
     background: #ffffff;
     position: absolute;
@@ -3643,12 +3655,12 @@ aside .mod a {
   }
 }
 
-/* line 449, ../scss/layout/_site.scss */
+/* line 450, ../scss/layout/_site.scss */
 .img-fifty-top {
   visibility: hidden;
 }
 @media screen and (min-width: 768px) {
-  /* line 449, ../scss/layout/_site.scss */
+  /* line 450, ../scss/layout/_site.scss */
   .img-fifty-top {
     background: #ffffff;
     position: absolute;
@@ -3660,7 +3672,7 @@ aside .mod a {
   }
 }
 
-/* line 461, ../scss/layout/_site.scss */
+/* line 462, ../scss/layout/_site.scss */
 .news .img-fifty {
   top: 0;
 }

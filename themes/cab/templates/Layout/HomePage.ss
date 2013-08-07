@@ -1,4 +1,3 @@
-
 <div class="slider-container">
   <div class="container">
   <div class="flexslider">

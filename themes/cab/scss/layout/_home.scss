@@ -190,12 +190,11 @@
 }
 
 .slider-container {
-	background: #202020;
+	background: rgba(32, 32, 32, 0.71);
 }
 /* Home Highlights
 ========================================================================== */
 .home-highlights {
-	background: #f2f2f2;
 	padding: 1em 0;
 }
 .module {
@@ -249,4 +248,22 @@
 	& a {
 		color: #333;
 	}
+}
+
+img#redlight {
+	float: right;
+	margin:0;
+}
+
+#involve h5{
+	font-family: 'Arimo',arial, serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	float: left;
+	width:300px;
+	color: #fefefe;
+}
+#involve {
+	color: #fefefe;
 }
