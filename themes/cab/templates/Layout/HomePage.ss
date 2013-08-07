@@ -13,7 +13,7 @@
         <% loop Slides %>
         <li>
           <a href="$Link" target="_blank"><img src="$ImageURL" alt="Slideshow Photo $Pos" /></a>
-          <p class="flex-caption"><a href="$Link" class="full-desc" target="_blank">$Description</a><a class="mobile-desc">$Description.LimitCharacters(60)</a></p>
+          <p class="flex-caption"><a href="$Link" class="full-desc" target="_blank">$Description</a></p>
         </li>
         <% end_loop %>
        </ul><!-- end slides -->
