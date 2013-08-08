@@ -40,3 +40,6 @@
 [submodule "gridfield-betterbuttons"]
 	path = gridfield-betterbuttons
 	url = https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git
+[submodule "timepickerfield"]
+	path = timepickerfield
+	url = https://github.com/sheadawson/silverstripe-timepickerfield
