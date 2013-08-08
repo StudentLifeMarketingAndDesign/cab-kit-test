@@ -183,7 +183,7 @@ body {
 	display: block;
 }
 .mod a {
-	color: #fff4d2;
+	color: #fff3d0;
 }
 
 aside .mod {
@@ -462,8 +462,22 @@ aside .mod {
 .news .img-fifty {
 	top: 0;
 }
+/* event list CSS*/
 
+.event-calendar-controls {
+	padding-bottom: 2em; 
+}
 
+.eList{
+	padding: 10px 10px 17px 10px; 
+	width: 100%;
+	display: block;
+	background: rgba(0,0,0,0.72);
+}
+
+.vevent {
+	color: #B1B1B1;
+}
 
 
 

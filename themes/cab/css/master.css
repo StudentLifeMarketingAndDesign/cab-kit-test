@@ -507,7 +507,7 @@ table {
 ========================================================================== */
 /* line 3, ../scss/imports/_typography.scss */
 a {
-  color: #0088cc;
+  color: white;
   outline: none;
   text-decoration: none;
 }
@@ -605,42 +605,81 @@ h5 + h6 {
   margin-top: 0;
 }
 
-/* line 54, ../scss/imports/_typography.scss */
+/* line 55, ../scss/imports/_typography.scss */
+.eList h1 {
+  color: #ffce39;
+  padding-left: .3em;
+  padding-bottom: 0px;
+  max-width: 1000px;
+}
+/* line 61, ../scss/imports/_typography.scss */
+.eList h2 {
+  color: #fff;
+  padding-left: .6em;
+}
+/* line 65, ../scss/imports/_typography.scss */
+.eList h3 {
+  color: #fff;
+}
+
+/* line 70, ../scss/imports/_typography.scss */
+.feed {
+  padding-left: 1.4em;
+}
+
+/* line 74, ../scss/imports/_typography.scss */
+.FBold {
+  color: white;
+}
+
+/* line 78, ../scss/imports/_typography.scss */
+.eList p {
+  color: white;
+}
+
+/* line 81, ../scss/imports/_typography.scss */
+#event-calendar-events {
+  color: #B1B1B1;
+}
+
+/* line 84, ../scss/imports/_typography.scss */
 .lede {
   font-size: 18px;
   font-size: 1.2rem;
 }
 
-/* line 58, ../scss/imports/_typography.scss */
+/* line 88, ../scss/imports/_typography.scss */
 ul, ol {
   padding: 0;
   margin-left: 24px;
+  list-style-type: none;
 }
 
-/* line 62, ../scss/imports/_typography.scss */
+/* line 93, ../scss/imports/_typography.scss */
 ul ul, ul ol, ol ol, ol ul {
   margin-top: 0;
   margin-bottom: 0;
+  list-style-type: none;
 }
 
-/* line 66, ../scss/imports/_typography.scss */
+/* line 98, ../scss/imports/_typography.scss */
 ul.unstyled, ol.unstyled {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 71, ../scss/imports/_typography.scss */
+/* line 103, ../scss/imports/_typography.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 74, ../scss/imports/_typography.scss */
+/* line 106, ../scss/imports/_typography.scss */
 dd {
   margin-left: 1em;
 }
 
-/* line 77, ../scss/imports/_typography.scss */
+/* line 109, ../scss/imports/_typography.scss */
 code, pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -651,7 +690,7 @@ code, pre {
   border-radius: 3px;
 }
 
-/* line 86, ../scss/imports/_typography.scss */
+/* line 118, ../scss/imports/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -659,7 +698,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 92, ../scss/imports/_typography.scss */
+/* line 124, ../scss/imports/_typography.scss */
 hr {
   clear: both;
   margin: 1.5em 0;
@@ -670,25 +709,25 @@ hr {
 
 /* Quotes
 ----------------------------------------------------*/
-/* line 102, ../scss/imports/_typography.scss */
+/* line 134, ../scss/imports/_typography.scss */
 blockquote {
   padding-left: 1em;
   border-left: 5px solid #ffce39;
 }
 
-/* line 106, ../scss/imports/_typography.scss */
+/* line 138, ../scss/imports/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #666;
 }
 
-/* line 111, ../scss/imports/_typography.scss */
+/* line 143, ../scss/imports/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
 
-/* line 114, ../scss/imports/_typography.scss */
+/* line 146, ../scss/imports/_typography.scss */
 blockquote.pull-right {
   float: right;
   margin-left: 1em;
@@ -698,23 +737,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 123, ../scss/imports/_typography.scss */
+/* line 155, ../scss/imports/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 126, ../scss/imports/_typography.scss */
+/* line 158, ../scss/imports/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 129, ../scss/imports/_typography.scss */
+/* line 161, ../scss/imports/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 135, ../scss/imports/_typography.scss */
+/* line 167, ../scss/imports/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -733,13 +772,11 @@ blockquote:after {
 
 /* line 5, ../scss/imports/_global.scss */
 ::-moz-selection {
-  background: #b3d4fc;
   text-shadow: none;
 }
 
 /* line 6, ../scss/imports/_global.scss */
 ::selection {
-  background: #b3d4fc;
   text-shadow: none;
 }
 
@@ -1127,12 +1164,10 @@ textarea,
   padding: 19px 20px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border-top: 1px solid #e5e5e5;
   *zoom: 1;
 }
 
-/* line 127, ../scss/imports/_forms.scss */
+/* line 125, ../scss/imports/_forms.scss */
 .Actions:before,
 .Actions:after {
   display: table;
@@ -1140,12 +1175,12 @@ textarea,
   line-height: 0;
 }
 
-/* line 132, ../scss/imports/_forms.scss */
+/* line 130, ../scss/imports/_forms.scss */
 .Actions:after {
   clear: both;
 }
 
-/* line 135, ../scss/imports/_forms.scss */
+/* line 133, ../scss/imports/_forms.scss */
 .Actions .action {
   background: #000;
   color: #fff;
@@ -1159,35 +1194,35 @@ textarea,
   border-radius: 3px;
 }
 
-/* line 147, ../scss/imports/_forms.scss */
+/* line 145, ../scss/imports/_forms.scss */
 .field {
   margin-bottom: 10px;
 }
 
-/* line 150, ../scss/imports/_forms.scss */
+/* line 148, ../scss/imports/_forms.scss */
 .field .left, .field .right {
   float: none;
 }
 
-/* line 153, ../scss/imports/_forms.scss */
+/* line 151, ../scss/imports/_forms.scss */
 .checkboxset, .optionset {
   list-style: none;
   margin: 0 0 9px 0;
   padding: 0;
 }
 
-/* line 158, ../scss/imports/_forms.scss */
+/* line 156, ../scss/imports/_forms.scss */
 .checkbox, .radio {
   display: inline;
 }
 
-/* line 161, ../scss/imports/_forms.scss */
+/* line 159, ../scss/imports/_forms.scss */
 .checkboxset .middleColumn label, .optionset .middleColumn label {
   display: inline;
   font-weight: normal;
 }
 
-/* line 165, ../scss/imports/_forms.scss */
+/* line 163, ../scss/imports/_forms.scss */
 .message.required {
   color: #f00;
   display: block;
@@ -3311,7 +3346,7 @@ body {
 
 /* line 185, ../scss/layout/_site.scss */
 .mod a {
-  color: #fff4d2;
+  color: #fff3d0;
 }
 
 /* line 189, ../scss/layout/_site.scss */
@@ -3675,6 +3710,25 @@ aside .mod a {
 /* line 462, ../scss/layout/_site.scss */
 .news .img-fifty {
   top: 0;
+}
+
+/* event list CSS*/
+/* line 467, ../scss/layout/_site.scss */
+.event-calendar-controls {
+  padding-bottom: 2em;
+}
+
+/* line 471, ../scss/layout/_site.scss */
+.eList {
+  padding: 10px 10px 17px 10px;
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+/* line 478, ../scss/layout/_site.scss */
+.vevent {
+  color: #B1B1B1;
 }
 
 /* Print

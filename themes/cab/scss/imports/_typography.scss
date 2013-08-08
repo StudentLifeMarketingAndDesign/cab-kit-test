@@ -1,6 +1,6 @@
 /* /scss/imports/typography.scss
 ========================================================================== */
-a {color: $link-color; outline:none; text-decoration: none;}
+a {color: white; outline:none; text-decoration: none;}
 a:hover {text-decoration: underline;}
 a:active {color:#0088cc;}
 a:focus {outline:thin dotted;}
@@ -51,6 +51,36 @@ h3 + h4,
 h4 + h5,
 h5 + h6 {margin-top:0;}
 
+.eList{ 
+	h1{
+		color: $yellow;
+		padding-left: .3em;
+		padding-bottom: 0px;
+		max-width: 1000px;
+	}
+	h2{
+	color: #fff;
+	padding-left: .6em; 
+	}
+	h3{
+		color: #fff; 
+	}
+}
+
+.feed {
+	padding-left: 1.4em; 
+}
+
+.FBold {
+	color: white; 
+}
+
+.eList p{
+	color: white; 	
+}
+#event-calendar-events { 
+	color: #B1B1B1;	
+}
 .lede {
     @include rem($base-font * 1.2);
 }
@@ -58,10 +88,12 @@ h5 + h6 {margin-top:0;}
 ul,ol {
     padding: 0;
     margin-left: 24px;
+    list-style-type: none;
 }
 ul ul,ul ol,ol ol,ol ul {
     margin-top: 0;
     margin-bottom: 0;
+    list-style-type: none;
 }
 ul.unstyled, ol.unstyled {
     list-style: none;
