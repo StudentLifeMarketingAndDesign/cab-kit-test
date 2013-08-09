@@ -1,6 +1,6 @@
 
 <div class="container clearfix">
-<div class = "eList">
+<div class = "event">
 $CalendarWidget
 <p><a href="$Parent.Link">&laquo; Back to $Parent.Title</a></p>
 <div class="vevent">
@@ -12,11 +12,11 @@ $CalendarWidget
   <p><a href="$ICSLink" title="<% _t('CalendarEvent.ADD','Add to Calendar') %>">Add this to Calendar</a></p>
   <% end_with %>
 
-  <div id = "eImage">
-  	$Image
-  </div
+
+  $BackgroundImage
+ 
   $Content
-  
+  asdfasdd
   <% if OtherDates %>
   <div class="event-calendar-other-dates">
     <h4><% _t('CalendarEvent.ADDITIONALDATES','Additional Dates for this Event') %></h4>
@@ -25,7 +25,7 @@ $CalendarWidget
       <li><a href="$Link" title="$Event.Title">$DateRange<% if StartTime %> $TimeRange<% end_if %></a></li>
       <% end_loop %> 
     </ul>
-  </div>
+  </div> 
   <% end_if %>
 </div>
 </div>

@@ -127,7 +127,7 @@ div {
   width: 1em;
   margin-right: 0.2em;
   text-align: center;
-  font-variant: normal;
+  font-variant: normal; 
   text-transform: none;
   line-height: 1em;
   margin-left: 0.2em;
@@ -183,7 +183,7 @@ div {
 }
 /* line 5, ../scss/imports/_typography.scss */
 .typography a:active {
-  color: #0088cc;
+  color: #999999;
 }
 /* line 6, ../scss/imports/_typography.scss */
 .typography a:focus {
@@ -258,69 +258,84 @@ div {
   margin-top: 0;
 }
 /* line 55, ../scss/imports/_typography.scss */
+.typography .event h1 {
+  color: #ffce39;
+  padding-bottom: 0px;
+  max-width: 1000px;
+}
+/* line 60, ../scss/imports/_typography.scss */
+.typography .event h2 {
+  color: #fff;
+  padding-left: .6em;
+}
+/* line 64, ../scss/imports/_typography.scss */
+.typography .event h3 {
+  color: #fff;
+}
+/* line 70, ../scss/imports/_typography.scss */
 .typography .eList h1 {
   color: #ffce39;
   padding-left: .3em;
   padding-bottom: 0px;
   max-width: 1000px;
 }
-/* line 61, ../scss/imports/_typography.scss */
+/* line 76, ../scss/imports/_typography.scss */
 .typography .eList h2 {
   color: #fff;
   padding-left: .6em;
 }
-/* line 65, ../scss/imports/_typography.scss */
+/* line 80, ../scss/imports/_typography.scss */
 .typography .eList h3 {
   color: #fff;
 }
-/* line 70, ../scss/imports/_typography.scss */
+/* line 85, ../scss/imports/_typography.scss */
 .typography .feed {
   padding-left: 1.4em;
 }
-/* line 74, ../scss/imports/_typography.scss */
+/* line 89, ../scss/imports/_typography.scss */
 .typography .FBold {
   color: white;
 }
-/* line 78, ../scss/imports/_typography.scss */
+/* line 93, ../scss/imports/_typography.scss */
 .typography .eList p {
   color: white;
 }
-/* line 81, ../scss/imports/_typography.scss */
+/* line 96, ../scss/imports/_typography.scss */
 .typography #event-calendar-events {
   color: #B1B1B1;
 }
-/* line 84, ../scss/imports/_typography.scss */
+/* line 99, ../scss/imports/_typography.scss */
 .typography .lede {
   font-size: 18px;
   font-size: 1.2rem;
 }
-/* line 88, ../scss/imports/_typography.scss */
+/* line 103, ../scss/imports/_typography.scss */
 .typography ul, .typography ol {
   padding: 0;
   margin-left: 24px;
   list-style-type: none;
 }
-/* line 93, ../scss/imports/_typography.scss */
+/* line 108, ../scss/imports/_typography.scss */
 .typography ul ul, .typography ul ol, .typography ol ol, .typography ol ul {
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
-/* line 98, ../scss/imports/_typography.scss */
+/* line 113, ../scss/imports/_typography.scss */
 .typography ul.unstyled, .typography ol.unstyled {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 103, ../scss/imports/_typography.scss */
+/* line 118, ../scss/imports/_typography.scss */
 .typography dt {
   font-weight: bold;
 }
-/* line 106, ../scss/imports/_typography.scss */
+/* line 121, ../scss/imports/_typography.scss */
 .typography dd {
   margin-left: 1em;
 }
-/* line 109, ../scss/imports/_typography.scss */
+/* line 124, ../scss/imports/_typography.scss */
 .typography code, .typography pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -330,14 +345,14 @@ div {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 118, ../scss/imports/_typography.scss */
+/* line 133, ../scss/imports/_typography.scss */
 .typography code {
   padding: 2px 4px;
   color: #d14;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
 }
-/* line 124, ../scss/imports/_typography.scss */
+/* line 139, ../scss/imports/_typography.scss */
 .typography hr {
   clear: both;
   margin: 1.5em 0;
@@ -345,22 +360,22 @@ div {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #fff;
 }
-/* line 134, ../scss/imports/_typography.scss */
+/* line 149, ../scss/imports/_typography.scss */
 .typography blockquote {
   padding-left: 1em;
   border-left: 5px solid #ffce39;
 }
-/* line 138, ../scss/imports/_typography.scss */
+/* line 153, ../scss/imports/_typography.scss */
 .typography blockquote small {
   display: block;
   line-height: 20px;
   color: #666;
 }
-/* line 143, ../scss/imports/_typography.scss */
+/* line 158, ../scss/imports/_typography.scss */
 .typography blockquote small:before {
   content: '\2014 \00A0';
 }
-/* line 146, ../scss/imports/_typography.scss */
+/* line 161, ../scss/imports/_typography.scss */
 .typography blockquote.pull-right {
   float: right;
   margin-left: 1em;
@@ -369,20 +384,20 @@ div {
   border-right: 5px solid #eee;
   border-left: 0;
 }
-/* line 155, ../scss/imports/_typography.scss */
+/* line 170, ../scss/imports/_typography.scss */
 .typography blockquote.pull-right p,
 .typography blockquote.pull-right small {
   text-align: right;
 }
-/* line 158, ../scss/imports/_typography.scss */
+/* line 173, ../scss/imports/_typography.scss */
 .typography blockquote.pull-right small:before {
   content: '';
 }
-/* line 161, ../scss/imports/_typography.scss */
+/* line 176, ../scss/imports/_typography.scss */
 .typography blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
-/* line 167, ../scss/imports/_typography.scss */
+/* line 182, ../scss/imports/_typography.scss */
 .typography q:before,
 .typography q:after,
 .typography blockquote:before,
