@@ -655,7 +655,7 @@ h5 + h6 {
 
 /* line 96, ../scss/imports/_typography.scss */
 #event-calendar-events {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 /* line 99, ../scss/imports/_typography.scss */
@@ -3196,7 +3196,7 @@ body {
     background: white url(../images/filmbackground.jpg) repeat-y left top;
     background-size: 100%;
     border-right: 1px solid black;
-    min-height: 500px;
+    min-height: 530px;
     width: 72%;
     position: relative;
     margin-top: -85px;
@@ -3696,7 +3696,6 @@ aside .mod a {
 @media screen and (min-width: 768px) {
   /* line 438, ../scss/layout/_site.scss */
   .img-fifty {
-    background: #ffffff;
     position: absolute;
     left: 0;
     width: 71%;
@@ -3713,7 +3712,8 @@ aside .mod a {
 @media screen and (min-width: 768px) {
   /* line 451, ../scss/layout/_site.scss */
   .img-fifty-top {
-    background: #ffffff;
+    background: white url(../images/filmbackground.jpg) repeat-y left top;
+    background-size: 100%;
     position: absolute;
     left: 0;
     width: 50%;
@@ -3723,25 +3723,30 @@ aside .mod a {
   }
 }
 
-/* line 463, ../scss/layout/_site.scss */
+/* line 465, ../scss/layout/_site.scss */
 .news .img-fifty {
   top: 0;
 }
 
 /* event list CSS*/
-/* line 468, ../scss/layout/_site.scss */
+/* line 470, ../scss/layout/_site.scss */
 .event-calendar-controls {
   padding-bottom: 2em;
 }
 
-/* line 472, ../scss/layout/_site.scss */
+/* line 474, ../scss/layout/_site.scss */
 .innerBackground {
   background: rgba(0, 0, 0, 0.72);
   padding: 10px 10px 17px 10px;
   width: 100%;
 }
 
-/* line 478, ../scss/layout/_site.scss */
+/* line 480, ../scss/layout/_site.scss */
+.sInnerBground {
+  background: rgba(0, 0, 0, 0.72);
+}
+
+/* line 484, ../scss/layout/_site.scss */
 .eList {
   padding: 10px 10px 17px 10px;
   width: 100%;
@@ -3749,7 +3754,7 @@ aside .mod a {
   background: rgba(0, 0, 0, 0.72);
 }
 
-/* line 485, ../scss/layout/_site.scss */
+/* line 491, ../scss/layout/_site.scss */
 .event {
   padding: 10px 10px 17px 20px;
   width: 100%;
@@ -3757,9 +3762,33 @@ aside .mod a {
   background: rgba(0, 0, 0, 0.72);
 }
 
-/* line 492, ../scss/layout/_site.scss */
+/* line 498, ../scss/layout/_site.scss */
 .vevent {
-  color: #B1B1B1;
+  color: #b1b1b1;
+  background: none;
+}
+/* line 500, ../scss/layout/_site.scss */
+.vevent h1 {
+  color: #ffce39;
+  padding-bottom: 0px;
+}
+/* line 504, ../scss/layout/_site.scss */
+.vevent h2 {
+  color: white;
+}
+
+/* line 510, ../scss/layout/_site.scss */
+.mevent {
+  color: #b1b1b1;
+}
+/* line 512, ../scss/layout/_site.scss */
+.mevent h1 {
+  color: #ffce39;
+  padding-bottom: 0px;
+}
+/* line 516, ../scss/layout/_site.scss */
+.mevent h2 {
+  color: white;
 }
 
 /* Print

@@ -8,12 +8,12 @@
     		<div class="img-fifty-top"></div>
     	</div>
     <% end_if %>
-    <div style="background: #fafafa;position: relative;">
+    <div style= "position: relative;">
     	<div class="img-fifty"></div>
 		<section class="container content-wrapper clearfix">
 		    
 		    <section class="main-content">
-		    <section class = "innerBackground">
+		    <section class = "innerBackground mevent">
 				<!-- $Breadcrumbs -->
 		    	$Form
 		    	$Content

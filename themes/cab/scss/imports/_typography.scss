@@ -94,7 +94,7 @@ h5 + h6 {margin-top:0;}
 	color: white; 	
 }
 #event-calendar-events { 
-	color: #B1B1B1;	
+	color: $gray;	
 }
 .lede {
     @include rem($base-font * 1.2);

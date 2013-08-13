@@ -69,7 +69,7 @@ body {
 		background: #fff url(../images/filmbackground.jpg) repeat-y left top;
 		background-size: 100%; 
 		border-right: 1px solid black;
-		min-height: 500px;
+		min-height: 530px;
 		width: 72%;
 		position: relative;
 		margin-top: -85px;
@@ -438,7 +438,7 @@ aside .mod {
 .img-fifty {
 	visibility: hidden;
 	@media screen and (min-width: $break-medium) {
-		background: #ffffff;
+		//background: #ffffff;
 		position: absolute;
 		left: 0;
 		width: 71%;
@@ -451,7 +451,9 @@ aside .mod {
 .img-fifty-top {
 	visibility: hidden;
 	@media screen and (min-width: $break-medium) {
-		background: #ffffff;
+		//background: #ffffff;
+		background: white url(../images/filmbackground.jpg) repeat-y left top;
+		background-size: 100%;
 		position: absolute;
 		left: 0;
 		width: 50%;
@@ -475,6 +477,10 @@ aside .mod {
 	width: 100%;
 }
 
+.sInnerBground{
+	background: rgba(0,0,0,0.72);
+}
+
 .eList{
 	padding: 10px 10px 17px 10px; 
 	width: 100%;
@@ -490,7 +496,27 @@ aside .mod {
 }
 
 .vevent {
-	color: #B1B1B1;
+	color: $gray;
+	h1{
+		color: #ffce39; 
+		padding-bottom: 0px; 
+	}
+	h2{
+		color: white; 
+	}
+	background: none; 
+}
+
+.mevent {
+	color: $gray;
+	h1{
+		color: #ffce39; 
+		padding-bottom: 0px; 
+	}
+	h2{
+		color: white; 
+	}
+
 }
 
 
