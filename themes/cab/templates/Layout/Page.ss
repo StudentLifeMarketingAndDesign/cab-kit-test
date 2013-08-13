@@ -19,9 +19,11 @@
 		    	$Content
 		    </section>	
 		    </section>
+		
 		    <section class="sec-content hide-print">
 		    	<% include SideNav %>
 		    </section>
+		   
 		</section>
 	</div>
 <%-- <% include TopicsAndNews %> --%>

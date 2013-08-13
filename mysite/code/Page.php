@@ -122,33 +122,32 @@ class Page_Controller extends ContentController {
 	public static function StaffSpotlightHandler($arguments, $content){
 		//example: [spotlight]Faces behind the scenes focuses on a person in the Division every month.[/spotlight]
 		
-		//$blogHolder = DataObject::get_by_id('BlogHolder', 133);
+		$blogHolder = DataObject::get_by_id('BlogHolder', 167);
 		//error was that it was trying to call a blog entry that didn't exist. 133. Solved by going to adminer.php, check the blogholder_live, select data and then observing the actual objects inside of it.  
-		$blogHolder = BlogHolder::get()->filter(array('ID' => '167'))->first(); 
-		
+		//$blogHolder = BlogHolder::get()->first(); 
+		if($blogHolder){
 		$latestStaffSpotlight = $blogHolder->Entries(1, 'faces')->first();
+		print_r($latestStaffSpotlight);
+			if($latestStaffSpotlight){
+			 
+				$customise = array();
+				/*** SET DEFAULTS ***/
+				$customise['BlogPage'] = $latestStaffSpotlight;
+				$customise['SidebarContent'] = $content;
+				 
+				//overide the defaults with the arguments supplied
+				$customise = array_merge($customise,$arguments);
+				 
+				//get our YouTube template
+				$template = new SSViewer('SidebarSpotlight');
+				 
+				//return the customised template
+				return $template->process(new ArrayData($customise));	
+			}	
 		
+		}
 		//print_r($blogHolder);
 		//$latestStaffSpotlight = BlogEntry::get()->
-		if($latestStaffSpotlight){
-		 
-			$customise = array();
-			/*** SET DEFAULTS ***/
-			$customise['BlogPage'] = $latestStaffSpotlight;
-			$customise['SidebarContent'] = $content;
-			 
-			//overide the defaults with the arguments supplied
-			$customise = array_merge($customise,$arguments);
-			 
-			//get our YouTube template
-			$template = new SSViewer('SidebarSpotlight');
-			 
-			//return the customised template
-			return $template->process(new ArrayData($customise));	
-		}	
-		
-		
-		
 	}
 	public static function BlogFeedHandler($arguments){
 		//example: [blogfeed page="news" tags="assessment"]Assessment News[/blogfeed]
