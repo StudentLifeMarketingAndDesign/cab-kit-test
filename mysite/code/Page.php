@@ -122,7 +122,9 @@ class Page_Controller extends ContentController {
 	public static function StaffSpotlightHandler($arguments, $content){
 		//example: [spotlight]Faces behind the scenes focuses on a person in the Division every month.[/spotlight]
 		
-		$blogHolder = DataObject::get_by_id('BlogHolder', 133);
+		//$blogHolder = DataObject::get_by_id('BlogHolder', 133);
+		//error was that it was trying to call a blog entry that didn't exist. 133. Solved by going to adminer.php, check the blogholder_live, select data and then observing the actual objects inside of it.  
+		$blogHolder = BlogHolder::get()->filter(array('ID' => '167'))->first(); 
 		
 		$latestStaffSpotlight = $blogHolder->Entries(1, 'faces')->first();
 		

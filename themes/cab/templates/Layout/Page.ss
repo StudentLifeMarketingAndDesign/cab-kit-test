@@ -4,7 +4,7 @@
     		<div class="img-fifty-top"></div>
     	</div>
     <% else %>
-    	<div class="img-container" style="background-image: url({$ThemeDir}/images/img-test.jpg);">
+    	<div class="img-container" style="background-image: url(assets/Uploads/rszcabexecphoto.jpg);">
     		<div class="img-fifty-top"></div>
     	</div>
     <% end_if %>
@@ -13,10 +13,11 @@
 		<section class="container content-wrapper clearfix">
 		    
 		    <section class="main-content">
+		    <section class = "innerBackground">
 				<!-- $Breadcrumbs -->
 		    	$Form
 		    	$Content
-		    	
+		    </section>	
 		    </section>
 		    <section class="sec-content hide-print">
 		    	<% include SideNav %>

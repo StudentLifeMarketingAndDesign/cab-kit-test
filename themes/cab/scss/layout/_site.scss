@@ -66,9 +66,10 @@ body {
 .main-content {
 	padding: 0 1em;
 	@media screen and (min-width: $break-medium) {
-		background: #fff;
-		border-right: 1px solid #ddd;
-		min-height: 1100px;
+		background: #fff url(../images/filmbackground.jpg) repeat-y left top;
+		background-size: 100%; 
+		border-right: 1px solid black;
+		min-height: 500px;
 		width: 72%;
 		position: relative;
 		margin-top: -85px;
@@ -429,7 +430,7 @@ aside .mod {
 	@media screen and (min-width: $break-medium) {
 		height: 400px;
 		padding-top: 0;
-		background-size: auto;
+		//background-size: auto;
 	}
 	
 
@@ -466,6 +467,12 @@ aside .mod {
 
 .event-calendar-controls {
 	padding-bottom: 2em; 
+}
+
+.innerBackground {
+	background: rgba(0,0,0,0.72);
+	padding: 10px 10px 17px 10px; 
+	width: 100%;
 }
 
 .eList{
