@@ -59,3 +59,7 @@ GD::set_default_quality(80);
 ShortcodeParser::get()->register('blogfeed',array('Page_Controller','BlogFeedHandler'));
 ShortcodeParser::get()->register('spotlight',array('Page_Controller','StaffSpotlightHandler'));
 Object::add_extension("BlogEntry","BlogFieldExtension");
+
+if(Director::isLive()) {
+	Director::forceSSL(array('/^Security/','/^admin/'));
+}
